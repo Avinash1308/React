@@ -1,0 +1,43 @@
+//Hello.jsx
+
+function Hello(emp) {
+  return (
+    <div>
+      {emp.name} {emp.empid}
+    </div>
+  );
+}
+export default Hello;
+
+
+
+
+
+//App.jsx
+
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import Hello from "./components/Hello";
+
+function App() {
+  const emp = {
+    name: "Avinash",
+    empid: [1, 2, 3],
+  };
+  return (
+    <div className="App">
+      <Hello emp={emp} />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
